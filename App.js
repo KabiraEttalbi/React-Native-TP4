@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {Text, View } from 'react-native';
+import DisplayInputContent from "./screens/DisplayInputContent"
+import SayHello from './screens/SayHello';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+<>
+      <Text style={{marginTop:60}}>--------------------TP 4 - EX 1--------------------</Text>
+      <SayHello/>
+      <Text>--------------------TP 4 - EX 2--------------------</Text>
+      <DisplayInputContent/>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
